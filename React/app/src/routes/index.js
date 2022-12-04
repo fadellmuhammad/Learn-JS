@@ -4,6 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Axios from '../pages/axios';
 import QRcode from '../pages/html-qr-code-plugin';
 
 const Routes = () => {
@@ -12,6 +13,7 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" />
         <Route exact path="/qrcode" component={QRcode} />
+        <Route exact path="/axios" component={Axios} />
       </Switch>
     </Router>
   )
